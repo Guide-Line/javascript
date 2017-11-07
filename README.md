@@ -132,7 +132,7 @@ jQuery오브젝트의 변수는 선두에 $ 를 부여
     var $sidebarBtn = $('.sidebar-btn');
 
 ```
-중복되는 jQuery의 검색결과를 캐시해주세요
+중복되는 jQuery의 검색결과는 아래처럼 해주세요
 
 ```js
     
