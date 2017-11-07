@@ -7,6 +7,7 @@
   1. [Naming](#Naming)
   1. [Types](#Types)
   1. [Comment](#Comment)
+  1. [Jquery](#Jquery)
   
   
   
@@ -111,5 +112,55 @@
     function markDownMake(value1 , value2){}
     
 ```
+
+<a href="#top">▲ back to top</a>
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+<a name="Jquery"></a>
+- Jquery
+
+jQuery오브젝트의 변수는 선두에 $ 를 부여
+
+```js
+    // bad
+    var sidebar = $('.sidebar');
+
+    // good
+    var $sidebar = $('.sidebar');
+
+    // good
+    var $sidebarBtn = $('.sidebar-btn');
+
+```
+중복되는 jQuery의 검색결과를 캐시해주세요
+
+```js
+    
+    // bad
+    function setSidebar() {
+      $('.sidebar').hide();
+
+      // ...stuff...
+
+      $('.sidebar').css({
+        'background-color': 'pink'
+      });
+    }
+
+    // good
+    function setSidebar() {
+      var $sidebar = $('.sidebar');
+      $sidebar.hide();
+
+      // ...stuff...
+
+      $sidebar.css({
+        'background-color': 'pink'
+      });
+    }
+    
+```
+
+
 
 <a href="#top">▲ back to top</a>
