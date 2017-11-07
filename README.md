@@ -57,24 +57,29 @@
 원시 타입으로 값을 직접 조작한다
     
 ```js
-    var yui = "yui";
+    //string
+    var name = "john doe";
+    console.log(name); // => john doe
+
+    //number
     var foo = 1;
     var bar = foo;
-    bar = 9;
-    
+    bar = 9;    
     console.log(foo, bar); // => 1, 9
     
-    var n = null;
-    console.log(n * 32); // 콘솔에 0 으로 로그가 남음.
-    
+     //boolean
     if (true) {
       var x = 5;
     }
     console.log(x); // 5
     
-    var answer = 42;
-    answer = "Thanks for all the fish..."; // number 에서 string 로 형변환도 가능하다
+    //null
+    var n = null;
+    console.log(n * 32); // 콘솔에 0 으로 로그가 남음.   
     
+    //undefined
+    var x;
+    console.log(x); // x 에 값이 정의되지 않았으르모  undefined 가 출력된다
     
     
 ```
@@ -95,6 +100,15 @@
      */
 
     /* 그러나, /* 중첩된 주석은 쓸 수 없습니다 */ SyntaxError */
+    
+    //아래 와 같이 주석을 활용할수 있다.
+    /**
+    *
+    * @param value1 : 내용
+    * @param value2 : 내용
+    *
+    */
+    function markDownMake(value1 , value2){}
     
 ```
 
