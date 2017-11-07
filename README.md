@@ -79,7 +79,7 @@
     
     //undefined
     var x;
-    console.log(x); // x 에 값이 정의되지 않았으르모  undefined 가 출력된다
+    console.log(x); // x 에 값이 정의되지 않았으므로  undefined 가 출력된다
     
     
 ```
@@ -101,7 +101,7 @@
 
     /* 그러나, /* 중첩된 주석은 쓸 수 없습니다 */ SyntaxError */
     
-    //아래 와 같이 주석을 활용할수 있다.
+    //함수의 주석을 아래처럼 활용할수 있다.
     /**
     *
     * @param value1 : 내용
