@@ -48,21 +48,35 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------
 <a name="Types"></a>
 - Types
-    - string
-    - number
-    - boolean
-    - null
-    - undefined
+    - [string](https://www.w3schools.com/js/js_strings.asp)
+    - [number](https://www.w3schools.com/js/js_numbers.asp)
+    - [boolean](https://www.w3schools.com/js/js_booleans.asp)
+    - [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)
+    - [undefined](https://www.w3schools.com/jsref/jsref_undefined.asp)
     
 원시 타입으로 값을 직접 조작한다
     
 ```js
+    var yui = "yui";
     var foo = 1;
     var bar = foo;
     bar = 9;
     
     console.log(foo, bar); // => 1, 9
-
+    
+    var n = null;
+    console.log(n * 32); // 콘솔에 0 으로 로그가 남음.
+    
+    if (true) {
+      var x = 5;
+    }
+    console.log(x); // 5
+    
+    var answer = 42;
+    answer = "Thanks for all the fish..."; // number 에서 string 로 형변환도 가능하다
+    
+    
+    
 ```
 
 <a href="#top">▲ back to top</a>
