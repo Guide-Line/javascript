@@ -12,6 +12,7 @@
   1. [Comment](#Comment)
   1. [Jquery](#Jquery)
   1. [Array](#Array)
+  1. [Function](#Function)
   
   
   
@@ -178,7 +179,7 @@ jQuery오브젝트의 변수는 선두에 $ 를 부여
 <a name="Array"></a>
 - Array
 
-배열 구문을 만들때 [리터럴](http://kssong.tistory.com/26) 구문을 사용
+배열 구문을 만들때 [리터럴](https://ko.wikipedia.org/wiki/%EB%A6%AC%ED%84%B0%EB%9F%B4) 구문을 사용
 
 ```js
     // bad
@@ -187,6 +188,47 @@ jQuery오브젝트의 변수는 선두에 $ 를 부여
     // good
     var items = [];
 
+```
+
+<a href="#top">▲ back to top</a>
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+<a name="Function"></a>
+- Function
+
+함수식
+
+```js
+    // 익명함수식
+    var anonymous = function() {
+      return true;
+    };
+
+    // 명시된 함수식
+    var named = function named() {
+      return true;
+    };
+
+    // 즉시실행 함수식
+    (function() {
+      console.log('hello.');
+    })();
+
+```
+
+매개변수(parameter)에 arguments 를 지정하지마세요! 모든 함수는 arguments 있습니다. 이는 배열처럼 접근이 가능하기도 합니다.
+
+```js    
+    // bad
+    function nope(name, options, arguments) {
+      // ...stuff...
+    }
+
+    // good
+    function yup(name, options, args) {
+      // ...stuff...
+    }
+    
 ```
 
 <a href="#top">▲ back to top</a>
