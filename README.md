@@ -2,7 +2,6 @@
 
 - [ktec_responsive_guide](https://github.com/Guide-Line/ktec_responsive_guide)
 
-- [웹퍼블리싱 레퍼런스 바로가기](http://192.168.99.62:777/auction/)
 
 <a name="top"></a>
 ### Table of Contents
