@@ -11,6 +11,7 @@
   1. [Types](#Types)
   1. [Comment](#Comment)
   1. [Jquery](#Jquery)
+  1. [Array](#Array)
   
   
   
@@ -135,7 +136,7 @@ jQuery오브젝트의 변수는 선두에 $ 를 부여
     var $sidebarBtn = $('.sidebar-btn');
 
 ```
-중복되는 jQuery의 검색결과는 아래처럼 해주세요
+중복되는 jQuery의 검색결과는 캐쉬화 하여 작성
 
 ```js
     
@@ -164,6 +165,21 @@ jQuery오브젝트의 변수는 선두에 $ 를 부여
     
 ```
 
+<a href="#top">▲ back to top</a>
 
+---------------------------------------------------------------------------------------------------------------------------------------------
+<a name="Array"></a>
+- Array
+
+배열 구문을 만들때 [리터럴](http://kssong.tistory.com/26) 구문을 사용
+
+```js
+    // bad
+    var items = new Array();
+
+    // good
+    var items = [];
+
+```
 
 <a href="#top">▲ back to top</a>
