@@ -192,7 +192,7 @@ jQuery오브젝트의 변수는 선두에 $ 를 부여
 
 ```
 
-[배열](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Indexed_collections#Array_object)에 값 저장
+배열 에 값 저장([예제 더보기](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Indexed_collections#Array_object))
 
 ```js
     var emp = [];
