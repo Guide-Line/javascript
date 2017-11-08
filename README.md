@@ -292,12 +292,14 @@ jQuery오브젝트의 변수는 선두에 $ 를 부여
 자바스크립트에서는 var 선언문 전에 변수를 사용해도 이미 선언된 것으로 간주한다.
 
 ```js
+    //1
     alert(typeof fn1); // undefined
     alert(typeof value1); // undefined
 
     var fn1 = function(){ ; };
     var value1 = 'value1';
-
+    
+    //2
     alert(typeof fn1); // function
     alert(typeof value1); // string
 
