@@ -192,6 +192,17 @@ jQuery오브젝트의 변수는 선두에 $ 를 부여
 
 ```
 
+[배열](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Indexed_collections#Array_object)에 값 저장
+
+```js
+    var emp = [];
+    emp[0] = "Casey Jones";
+    emp[1] = "Phil Lesh";
+    emp[2] = "August West"; 
+
+```
+
+
 <a href="#top">▲ back to top</a>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
