@@ -216,7 +216,7 @@ jQuery오브젝트의 변수는 선두에 $ 를 부여
 
 ```
 
-매개변수(parameter)에 arguments 를 지정하지마세요! 모든 함수는 arguments 있습니다. 이는 배열처럼 접근이 가능하기도 합니다.
+매개변수(parameter)에 arguments 를 지정하지마세요! 모든 함수는 arguments 가 있습니다. 이는 배열처럼 접근이 가능하기도 합니다.
 
 ```js    
     // bad
