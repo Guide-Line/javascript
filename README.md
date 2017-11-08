@@ -15,6 +15,7 @@
   1. [Function](#Function)
   1. [Variables](#Variables)
   1. [Hoisting ](#Hoisting )
+  1. [Commas](#Commas)
   
   
   
@@ -335,8 +336,68 @@ jQuery오브젝트의 변수는 선두에 $ 를 부여
 
 ```
 
+<a href="#top">▲ back to top</a>
 
+---------------------------------------------------------------------------------------------------------------------------------------------
+<a name="Commas"></a>
+- Commas
 
+선두의 comma는 하지마십시오.
 
+```js
+    // bad
+    var once
+      , upon
+      , aTime;
+
+    // good
+    var once,
+        upon,
+        aTime;
+
+    // bad
+    var hero = {
+        firstName: 'Bob'
+      , lastName: 'Parr'
+      , heroName: 'Mr. Incredible'
+      , superPower: 'strength'
+    };
+
+    // good
+    var hero = {
+      firstName: 'Bob',
+      lastName: 'Parr',
+      heroName: 'Mr. Incredible',
+      superPower: 'strength'
+    };
+
+```
+
+말미의 불필요한 쉼표도 하지마세요, IE에서 문제를 일으킬수있습니다.
+
+```js
+   // bad
+    var hero = {
+      firstName: 'Kevin',
+      lastName: 'Flynn',
+    };
+
+    var heroes = [
+      'Batman',
+      'Superman',
+    ];
+
+    // good
+    var hero = {
+      firstName: 'Kevin',
+      lastName: 'Flynn'
+    };
+
+    var heroes = [
+      'Batman',
+      'Superman'
+    ]; 
+
+```
 
 <a href="#top">▲ back to top</a>
