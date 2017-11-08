@@ -16,6 +16,7 @@
   1. [Variables](#Variables)
   1. [Hoisting ](#Hoisting )
   1. [Commas](#Commas)
+  1. [Script in html](#Scriptinhtml)
   
   
   
@@ -63,7 +64,7 @@
     - [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null)
     - [undefined](https://www.w3schools.com/jsref/jsref_undefined.asp)
     
-원시 타입으로 값을 직접 조작한다
+원시 타입으로 값을 직접 조작할수있다.
     
 ```js
     //string
@@ -401,3 +402,48 @@ jQuery오브젝트의 변수는 선두에 $ 를 부여
 ```
 
 <a href="#top">▲ back to top</a>
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+<a name="Scriptinhtml"></a>
+- Script in html
+
+웹 브라우저는 HTML 코드와 자바스크립트 코드를 동시에 해석하지 않고 작성된 순서대로([인터프리터](https://namu.wiki/w/%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0)) 해석하기 때문에 자바스크립트 코드를 나중에 해석하도록 하면 HTML 문서를 화면에 표시하는 속도가 빨라집니다.
+
+```js
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <!-- css 선언 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css">
+
+
+
+
+    </head>
+    <body>
+
+        ...
+
+
+
+        <!-- script 선언 -->
+        <script src="js/main.js"></script>
+        <script>
+            ...
+
+        </script>
+    </body>
+    </html>
+
+```
+
+<a href="#top">▲ back to top</a>
+
+
+
