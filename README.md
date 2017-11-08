@@ -106,16 +106,23 @@
 
     /* 그러나, /* 중첩된 주석은 쓸 수 없습니다 */ SyntaxError */
     
-    //함수의 주석을 아래처럼 활용할수 있다.
+```
+
+함수의 주석을 아래처럼 활용할수 있다.
+
+```js
     /**
     *
     * @param value1 : 내용
     * @param value2 : 내용
     *
     */
-    function markDownMake(value1 , value2){}
-    
+    function markDownMake(value1 , value2){
+        ...    
+    }
+
 ```
+
 
 <a href="#top">▲ back to top</a>
 
