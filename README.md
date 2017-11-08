@@ -13,6 +13,8 @@
   1. [Jquery](#Jquery)
   1. [Array](#Array)
   1. [Function](#Function)
+  1. [Variables](#Variables)
+  1. [Hoisting ](#Hoisting )
   
   
   
@@ -230,5 +232,98 @@ jQuery오브젝트의 변수는 선두에 $ 를 부여
     }
     
 ```
+
+<a href="#top">▲ back to top</a>
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+<a name="Variables"></a>
+- Variables
+
+변수를 선언할때 항상 var 를 사용하세요. 그렇지 않으면 전역 변수로 선언 될 수 있습니다.
+
+```js
+    // bad
+    superPower = new SuperPower();
+
+    // good
+    var superPower = new SuperPower();
+
+```
+
+여러 변수를 선언하려면 하나의 var 를 사용하여 변수마다 줄바꿈하여 선언합니다.
+
+```js    
+    // bad
+    var items = getItems();
+    var goSportsTeam = true;
+    var dragonball = 'z';
+
+    // good
+    var items = getItems(),
+        goSportsTeam = true,
+        dragonball = 'z';
+
+```
+
+여러개의 변수를 선언시 정의되지 않은 변수를 마지막으로 선언하십시오
+
+```js    
+    // bad
+    var i, items = getItems(),
+        dragonball,
+        goSportsTeam = true,
+        len;
+
+    // good
+    var items = getItems(),
+        goSportsTeam = true,
+        dragonball,
+        length,
+        i;
+
+```
+
+<a href="#top">▲ back to top</a>
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+<a name="Hoisting"></a>
+- Hoisting
+
+자바스크립트에서는 var 선언문 전에 변수를 사용해도 이미 선언된 것으로 간주한다.
+
+```js
+    alert(typeof fn1); // undefined
+    alert(typeof value1); // undefined
+
+    var fn1 = function(){ ; };
+    var value1 = 'value1';
+
+    alert(typeof fn1); // function
+    alert(typeof value1); // string
+
+    1. 자바스크립트는 실행시 모든 변수가 선언 됩니다. 즉, 결과 에서 처럼 변수를 정의 하기전 
+    결과는 모두 "undefined"를 반환 합니다.
+
+    2. 하지만 정의된 후의 결과는 각각 function 과 string을 반환 합니다.
+    
+```
+
+함수 선언문으로 선언된 변수는 호이스팅 동작에서 정의된 값이 위로 끌어 올려집니다.
+
+```js    
+    alert(typeof fn1); // function
+
+    function fn1(){ ; };
+
+    alert(typeof fn1); // function
+    
+    함수 선언문 방식으로 작성한 전역 fn1()
+    함수 객체는 var선언문 이전의 결과 에서도 function() 을 반환 합니다.
+
+```
+
+
+
+
 
 <a href="#top">▲ back to top</a>
